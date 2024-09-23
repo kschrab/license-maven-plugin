@@ -68,6 +68,13 @@ public class DefaultThirdPartyDetails implements ThirdPartyDetails {
     /**
      * {@inheritDoc}
      */
+    public String getBaseVersion() {
+        return project.getArtifact().getBaseVersion();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public String getType() {
         return project.getArtifact().getType();
     }

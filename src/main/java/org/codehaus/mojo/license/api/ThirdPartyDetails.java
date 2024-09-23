@@ -46,6 +46,11 @@ public interface ThirdPartyDetails {
     String getVersion();
 
     /**
+     * @return the base version ("-SNAPSHOT" instead of timestamp) of the dependency
+     */
+    String getBaseVersion();
+
+    /**
      * @return the type of the dependency
      */
     String getType();
